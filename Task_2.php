@@ -1,6 +1,6 @@
 <?php
 
-$name = "Kathir";
+$name = "GitKathir";
 $age = 24;
 $height = 6.2;
 $is_student = true;
