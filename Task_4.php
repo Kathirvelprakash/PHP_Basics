@@ -1,7 +1,7 @@
 <?php
 $temp = 30;
 
-// Using if-elseif-else
+
 if ($temp >= 30) { 
     echo "It's hot outside!";
 } elseif ($temp > 20) {
@@ -18,7 +18,6 @@ $category = match (true) {
     default => "cold",
 };
 
-// Using switch to display the message
 switch ($category) {
     case "hot":
         echo "It's hot outside!";
