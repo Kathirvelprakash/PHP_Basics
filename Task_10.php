@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        span {
+            color: red;
+        }
+    </style>
+</head>
 <body>
     <?php
     // Define available rooms
