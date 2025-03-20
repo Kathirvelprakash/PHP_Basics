@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <?php
+    // Define available rooms
+    $rooms = [101, 102, 103, 104, 105];
+    
+    // Default booked rooms (predefined)
+    $pre_booked = [102, 105, 104];
+    
+    // Initialize variables
+    $booked = $pre_booked; // Start with predefined booked rooms
+    $error = $success = "";
+    $need = "";
 
     // Retrieve previously booked rooms from the hidden input field
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
