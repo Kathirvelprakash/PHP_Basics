@@ -28,3 +28,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["add_to_cart"])) {
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Online Shopping Cart</h2>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr><th>Image</th><th>Product Name</th><th>Price</th><th>Option</th></tr>
+
+        <?php foreach ($products as $index => $product): ?>
+        <tr>
+            <td><img src="<?= $product['img']; ?>" width="100px" height="100px"></td>
+            <td><?= $product['name']; ?></td>
+            <td>₹<?= number_format($product['price'], 2); ?></td>
+            <td>
+                <form method="POST">
+                    <input type="hidden" name="index" value="<?= $index; ?>">
+                    <input type="submit" name="add_to_cart" value="Add to Cart">
+                </form>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+    </table>
+
+    <p><a href="Task_9.1.php">View Cart</a></p>
+</body>
+</html>
