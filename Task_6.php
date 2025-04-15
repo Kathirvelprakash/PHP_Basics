@@ -2,11 +2,9 @@
 <html lang="en">
 <body>
     <?php
-    // Initializing variables
     $errors = [];
     $users = [];
 
-    // Input Sanitization Function
     function sanitize_input($x) {
         return stripslashes(trim(htmlspecialchars($x)));
     }

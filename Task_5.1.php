@@ -7,7 +7,7 @@ foreach ($ani as $animal) {
     echo "$animal<br>";
 }
 
-echo "<br>";  // Extra line break for better readability
+echo "<br>";
 
 echo "<strong>Animal List with Index Element</strong><br><br>";
 
