@@ -15,7 +15,7 @@ foreach ($ani as $index => $animal) {
     echo "Animal [$index] = $animal <br>";
 }
 
-echo "<br>";  // Extra line break
+echo "<br>"; 
 
 echo "<strong>Animal List with More Than 5 Letters</strong><br><br>";
 
@@ -25,7 +25,7 @@ foreach ($ani as $animal) {
     }
 }
 
-echo "<br>";  // Extra line break
+echo "<br>"; 
 
 echo "<strong>Reversed Animal List</strong><br><br>";
 
